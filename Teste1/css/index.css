@@ -1,0 +1,141 @@
+:root{
+    --azulBase: #151D3B;
+    --brancoBase:#FFFFFF;
+    --vermelhoBase:#D82148;
+    --font-principal: 'Montserrat', sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: var(--font-principal);
+}
+
+/*----====HEADER====----*/
+header{
+    height: 150px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--azulBase);
+}
+/*--nav-bar--*/
+.nav-bar{
+    height: 55%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--brancoBase);
+}
+.logo{
+    height: 60px;
+    width: 170px;
+}
+.search-box{
+    width: 350px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search-box input{
+    height: 40%;
+    width: 70%;
+    border-radius: 100px 0px 0px 100px;
+    border: none;
+    outline: none; /*--este elemento tira a borda de algum input, quando clicado--*/
+}
+.search-box button{
+    background-color: var(--vermelhoBase);
+    height: 40%;
+    width:30% ;
+    color: var(--brancoBase);
+    border: none;
+    border-radius: 0px 100px 100px 0px;
+    cursor: pointer;
+}
+.link-login{
+    height: 60px;
+    width: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.link-login img{
+    height: 40px;
+    width: 40px;
+    color: var(--brancoBase);
+}
+.link-login a{
+    text-decoration: none;
+    color: var(--brancoBase);
+    letter-spacing: 2px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+/*--------*/
+.hr-header{
+    width: 100%;
+    height: 3px;
+    background-color: var(--vermelhoBase);
+    border: none;
+}
+/*--=links-header=--*/
+.links-header{
+    height:40% ;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    color: var(--brancoBase);
+}
+.links-header button{
+    background: none;
+    border: none;
+    color: var(--brancoBase);
+    font-family: var(--font-principal);
+    font-size: 16px;
+}
+/*-----------*/
+
+/*----====MAIN====----*/
+.main{
+    width:100%;
+    display: flex;
+    justify-content: center;
+}
+/*--=info-box=--*/
+.info-box{
+    height: 400px;
+    width: 80%;
+    background-color: var(--azulBase) ;
+    border-radius: 0px 0px 20px 20px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.container-categorias{
+    width: 80%;
+    height: 80%;
+    display: flex;
+}
+.categorias{
+    height: 100%;
+    width: 33%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    color: var(--brancoBase);
+}
+ .container-categorias hr{
+    height: 100%;
+    width: 1px;
+    background-color: #FFFFFF;
+}
