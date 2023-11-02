@@ -1,0 +1,42 @@
+:root{
+
+}
+
+*, body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-forms{
+    height: 70%;
+     width: 75%;
+     background-color: aliceblue;
+}
+/*--==LOGIN==--*/
+.login{
+    width: 50%;
+    display: block;
+    float: right;
+}
+/*--==CADASTRO==--*/
+.cadastro{
+    display: none;
+}
+/*--==GREEN-WAVE==--*/
+.green-wave{
+    width: 50%;
+    background-color: rgb(18, 148, 61);
+    transition: all 1.5s ease-in-out;
+    float: left;
+    box-shadow: 5px 0px 10px rgb(105, 104, 104);
+}
+/*Botão*/
+.cadastro-login{
+    width: 110px;
+    height: 30px;
+
+}
