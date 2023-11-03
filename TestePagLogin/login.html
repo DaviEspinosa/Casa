@@ -1,27 +1,43 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="login.css">
 </head>
+
 <body>
     <div class="container-forms">
         <!-- --LOGIN-- -->
         <form class="login" id="login" action="">
-
-        </form>               
+            <div class="container-logar">
+                <h2>Login</h2>
+                <div class="logar-link">
+                    <img src="/TestePagLogin/img/facebook.png" alt="">
+                    <img src="/TestePagLogin/img/social.png" alt="">
+                    <img src="/TestePagLogin/img/linkedin.png" alt="">
+                </div>
+                <h4>ou</h4>
+                <div class="entrada-dados-login">
+                    <input type="email" placeholder="E-mail">   
+                    <input type="password" placeholder="Senha">
+                </div>
+                <button type="submit" class="btn-enviar">Enviar</button>
+            </div>
+        </form>
 
         <!-- --Tela Verde-- -->
         <div class="green-wave" id="green-wave">
 
-            <button class="cadastro-login cadastrar" id="cadastro-login" onclick="mostrarCad()">Cadastrar-se</button>
+            <button class="cadastro-login cadastrar" id="cadastro-login" >Cadastrar-se</button>
             <!-- --CADASTRO-- -->
             <form class="cadastro" id="cadastro" action=""></form>
         </div>
-        
+
     </div>
 </body>
 <script src="login.js"></script>
+
 </html>

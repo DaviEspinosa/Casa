@@ -15,10 +15,17 @@ const cadastro = document.getElementById('cadastro');
     }
     else{
         cadastrologin.innerHTML = 'Login';
+        cadastro.style.display = 'block';
+        // login.style.opacity = 0;
+        login.style.transform = 'translateX(-100%)';
+        greenWave.style.width = '100%'
+
+        greenWave.addEventListener('transitionend', () =>   {
+            // Quando a transição de "green-wave" terminar, oculte o formulário de login
+            login.style.display = 'none';
+        });
+
     }
 
-    cadastro.style.display = 'block';
-    login.style.display = 'none';
-    greenWave.style.width = '100%'
 
-})
+})  
