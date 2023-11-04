@@ -11,7 +11,7 @@ const textCadastro = document.getElementById('conviteTxt');
     cadastrologinBtn.classList.toggle('cadastrar');
     cadastrologinBtn.classList.toggle('logar');
 
-    cadastrologinBtn.style.display = 'none';
+    // cadastrologinBtn.style.display = 'none';
     /*If e Else para alternar entre as classes */
     if (cadastrologinBtn.classList.contains('cadastrar')) {
         cadastrologinBtn.innerHTML = 'Cadastre-se';
@@ -20,8 +20,10 @@ const textCadastro = document.getElementById('conviteTxt');
     else{
         cadastrologinBtn.innerHTML = 'Login';
         // login.style.opacity = 0;
-        login.style.transform = 'translateX(-80%)';
-        greenWave.style.width = '100%'
+         login.style.transform = 'translateX(-5%)';
+        greenWave.style.width = '50%'
+        greenWave.style.transform = 'translateX(100%)'
+        greenWave.style.backgroundImage = 'linear-gradient( 45deg,rgb(30, 117, 74)40%), transparent, rgb(33, 165, 77)50%;';
         textCadastro.style.display = 'none';
 
 
@@ -33,7 +35,7 @@ const textCadastro = document.getElementById('conviteTxt');
     
             // cadastrologinBtn.style.display = "block";
             cadastro.style.display = 'block';
-            cadastro.style.opacity = 1;
+            // cadastro.style.opacity = 1;
             
         });
 

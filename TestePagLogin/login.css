@@ -14,7 +14,7 @@ body {
 .container-forms {
     height: 70%;
     width: 75%;
-    background-color: aliceblue;
+    background-color: rgb(229, 242, 253);
 }
 
 /*--==LOGIN==--*/
@@ -26,7 +26,7 @@ body {
     align-items: center;
     float: right;
     /* transition: opacity 0ms ease; */
-    transition: all 1s ease-in-out;
+    transition: all 2.3s ease-in-out;
 }
 
 .container-logar {
@@ -95,11 +95,7 @@ h4 {
 }
 
 /*--==CADASTRO==--*/
-.container-cadastro {
-    height: 90%;
-    color: aliceblue;
 
-}
 
 .conviteTxt {
     height: 80%;
@@ -114,6 +110,7 @@ h4 {
 p {
     margin-top: 30px;
     height: 100px;
+    font-weight: bold;
 }
 
 .cadastro {
@@ -131,28 +128,30 @@ p {
 }
 
 .img-cachorro {
-    width: 50%;
+    width: 100%;
     height: 100%;
     float: right;
     display: none;
+    ;
 }
 
 .img-cachorro img {
-    width: 90%;
+    width: 100%;
     height: 100%;
     margin-right: 0;
+    border-radius: 10px
 }
 
 /*--==GREEN-WAVE (Div Verde)==--*/
 .green-wave {
     width: 40%;
-    background-color: #2BA974;
+    background-image:linear-gradient( 45deg,rgb(33, 165, 77)50%, transparent, rgb(30, 117, 74)40%); 
     transition: all 1.0s ease-in-out;
     box-shadow: 5px 0px 10px rgb(105, 104, 104);
     position: relative;
-    /*display: flex;
-    justify-content: center;
-    align-items: center; */
+    color: rgb(255, 255, 255);
+    
+    border-radius: 10px;
 }
 
 /*Botão*/
