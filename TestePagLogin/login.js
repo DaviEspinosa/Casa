@@ -21,8 +21,8 @@ const textCadastro = document.getElementById('conviteTxt');
         cadastrologinBtn.innerHTML = 'Login';
         // login.style.opacity = 0;
          login.style.transform = 'translateX(-5%)';
-        greenWave.style.width = '50%'
-        greenWave.style.transform = 'translateX(100%)'
+        greenWave.style.width = '140%'
+        greenWave.style.transform = 'translateX(0%)'
         greenWave.style.backgroundImage = 'linear-gradient( 45deg,rgb(30, 117, 74)40%), transparent, rgb(33, 165, 77)50%;';
         textCadastro.style.display = 'none';
 
