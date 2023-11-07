@@ -5,7 +5,7 @@ const cadastro = document.getElementById('cadastro');
 const imgCachorro = document.getElementById('img-cachorro');
 const textCadastro = document.getElementById('conviteTxt');
 
- cadastrologinBtn.addEventListener('click', ()  => {
+cadastrologinBtn.addEventListener('click', () => {
 
     /*Utilizando toggle para alternat entre as classes */
     cadastrologinBtn.classList.toggle('cadastrar');
@@ -15,28 +15,29 @@ const textCadastro = document.getElementById('conviteTxt');
     /*If e Else para alternar entre as classes */
     if (cadastrologinBtn.classList.contains('cadastrar')) {
         cadastrologinBtn.innerHTML = 'Cadastre-se';
-
+        greenWave.classList.remove("wave-animation");
     }
-    else{
+    else {
         cadastrologinBtn.innerHTML = 'Login';
-        // login.style.opacity = 0;
-         login.style.transform = 'translateX(-5%)';
-        greenWave.style.width = '50%'
-        greenWave.style.transform = 'translateX(100%)'
+
+        login.style.transform = 'translateX(-50%)';
+        greenWave.style.width = '140%'
+        greenWave.style.transform = 'translateX(0%)'
         greenWave.style.backgroundImage = 'linear-gradient( 45deg,rgb(30, 117, 74)40%), transparent, rgb(33, 165, 77)50%;';
         textCadastro.style.display = 'none';
+        greenWave.classList.add("wave-animation");
+        
 
 
-        greenWave.addEventListener('transitionend', () =>   {
+        greenWave.addEventListener('transitionend', () => {
             // Quando a transição de "green-wave" terminar...
             login.style.display = 'none';
-            imgCachorro.style.display='block';
+            imgCachorro.style.display = 'block';
             cadastrologinBtn.style.float = "right";
-    
+            greenWave.classList.remove("wave-animation");
+
             // cadastrologinBtn.style.display = "block";
             cadastro.style.display = 'block';
-            // cadastro.style.opacity = 1;
-            
         });
 
     }
