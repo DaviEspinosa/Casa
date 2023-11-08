@@ -15,7 +15,7 @@ body {
 .container-forms {
     height: 70%;
     width: 75%;
-    background-color: rgb(229, 242, 253);
+    background-color: rgb(241 253 229);
     overflow: hidden;
 }
 
@@ -171,6 +171,7 @@ p {
     position: relative;
     color: rgb(255, 255, 255);
     border-radius: 10px;
+    filter: drop-shadow(15px 0px 10px rgba(0, 0, 0, 0.25));
 }
 
 /*Botão*/
@@ -184,6 +185,7 @@ p {
     border-radius: 5px;
 }
 
+/*Animação*/
 .wave-animation
 {
     animation: wave-animation 2s linear infinite;
