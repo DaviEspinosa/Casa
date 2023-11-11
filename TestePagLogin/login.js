@@ -3,7 +3,6 @@ const cadastrologinBtn = document.getElementById('cadastro-login');
 const greenWave = document.getElementById('green-wave');
 const login = document.getElementById('login');
 const cadastro = document.getElementById('cadastro');
-const imgCachorro = document.getElementById('img-cachorro');
 const textCadastro = document.getElementById('conviteTxt');
 
 cadastrologinBtn.addEventListener('click', () => {
@@ -33,7 +32,7 @@ cadastrologinBtn.addEventListener('click', () => {
         greenWave.addEventListener('transitionend', () => {
             // Quando a transição de "green-wave" terminar...
             login.style.display = 'none';
-            imgCachorro.style.display = 'block';
+
             cadastrologinBtn.style.float = "right";
             greenWave.classList.remove("wave-animation");
 
