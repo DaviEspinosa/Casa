@@ -1,0 +1,175 @@
+HTML card
+<section class="novos-produtos">
+        <h2>Novidades da Semana</h2>
+        <div class="produtos">
+          <div class="card-produto">
+            <div class="imagem-links">
+              <img class="produto-img" src="/img/Brinquedo de morder(5).png"alt=""/>
+            </div>
+            <div class="descricao">
+              <h4>text</h4>
+              <p>descrição do produto</p>
+              <div class="preco">
+                <span class="sem-desconto">$15,99</span>
+                <span class="desconto">$10,99</span>
+              </div>
+              <button class="add-car">
+                <img src="/img/heart(1).png" alt="" />
+              </button>
+            </div>
+           
+          </div>
+
+          <div class="card-produto">
+            <div class="imagem-links">
+              <img class="produto-img" src="/img/Brinquedo de morder(5).png"  alt=""/>
+            </div>
+            <div class="descricao">
+              <h4>text</h4>
+              <p>descrição do produto</p>
+              <div class="preco">
+                <span class="sem-desconto">$15,99</span>
+                <span class="desconto">$10,99</span>
+              </div>
+              <button class="add-car">
+                <img src="/img/heart(1).png" alt="" />
+              </button>
+            </div>
+          </div>
+
+          <div class="card-produto">
+            <div class="imagem-links">
+              <img class="produto-img" src="/img/Brinquedo de morder(5).png" alt=""/>
+            </div>
+            <div class="descricao">
+              <h4>text</h4>
+              <p>descrição do produto</p>
+              <div class="preco">
+                <span class="sem-desconto">$15,99</span>
+                <span class="desconto">$10,99</span>
+              </div>
+              <button class="add-car">
+                <img src="/img/heart(1).png" alt="" />
+              </button>
+            </div>
+          </div>
+
+          <div class="card-produto">
+            <div class="imagem-links">
+              <img class="produto-img"src="/img/Brinquedo de morder(5).png" alt=""/>
+            </div>
+            <div class="descricao">
+              <h4>text</h4>
+              <p>descrição do produto</p>
+              <div class="preco">
+                <span class="sem-desconto">$15,99</span>
+                <span class="desconto">$10,99</span>
+              </div>
+              <button class="add-car">
+                <img src="/img/heart(1).png" alt="" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+
+
+
+
+      
+ CSS card
+ /* --==Section Novos Produtos==-- */
+.novos-produtos {
+    margin-top:50px;
+    height: 400px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.novos-produtos h2 {
+    width: 100%;
+    height: 40px;
+}
+.produtos {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card-produto {
+    width: 200px;
+    height: 300px;
+    box-shadow: 3px 1px 20px 3px rgb(212, 212, 212);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 1%;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: rgb(243, 243, 243);
+}
+.card-produto .imagem-links {
+    width: 100%;
+    display: flex;
+justify-content: center;
+}
+.card-produto .produto-img{
+    height: 100%;
+    width: 220px;
+}
+/* ---===DESCRIÇÃO===--- */
+.descricao {
+    margin-left: 20px;
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+/* --Preço-- */
+
+.descricao .preco {
+    height: 100;    width: 100%;
+    display: flex;
+    margin-left: 5px;
+}
+
+.sem-desconto{
+    color: rgb(117, 0, 0);
+    text-decoration: line-through;
+    font-size: 12px;
+
+}
+.desconto{
+color: rgb(10, 78, 10);
+font-size:15px;
+
+}
+
+
+/* --botao add car-- */
+.add-car{
+border-radius: 50%;
+border: none;
+width: 30px;
+height: 30px;
+transition: .2s;
+margin-bottom: 10px;
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: rgb(243, 243, 243);
+}
+.add-car img{
+    height: 25px;
+    width: 25px;
+}
+

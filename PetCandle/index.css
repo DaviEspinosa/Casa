@@ -1,13 +1,15 @@
-/* ----- Header ----- */
 
-:root {}
+
+:root {
+    --padrao: 'Hammersmith One', sans-serif;
+}
 
 *,
 body {
     height: 100%;
     margin: 0;
     padding: 0;
-
+    font-family: var(--padrao);
 }
 
 /* ----- Header ----- */
@@ -21,6 +23,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     box-shadow: 30px 0px 20px 30px rgb(212, 212, 212);
+    font-family: 'Hammersmith One', sans-serif;;
 }
 /* ----- Navbar ----- */
 .navbar {
@@ -39,17 +42,17 @@ body {
 .links {
     width: 50%;
 }
-
 .header .navbar ul {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: rgb(116, 60, 60);
 }
 .header .navbar ul li {
     list-style: none;
-    padding: 10px;
+    padding: 30px;
 }
-/* --login e cadastro-- */
+/* --login e cadastro (LINK)-- */
 .login-cad-section {
     display: flex;
     align-items: center;
@@ -85,90 +88,24 @@ body {
 /* --==Section Novos Produtos==-- */
 .novos-produtos {
     margin-top:50px;
-    height: 400px;
+    height: 200px;
     width: 90%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
 }
-
-.novos-produtos h2 {
-    width: 100%;
-    height: 40px;
+.div-cards{
+height: 200px;
+width: 50%;
+display: flex;
+justify-content: space-between;
 }
-.produtos {
-    width: 80%;
-    height: 80%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.card-produto {
-    width: 200px;
-    height: 300px;
-    box-shadow: 3px 1px 20px 3px rgb(212, 212, 212);
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    align-items: center;
-    margin-left: 1%;
-    border-radius: 10px;
+.card-circle{
+    height: 100px;
+    width: 100px;
     overflow: hidden;
 }
-.card-produto .imagem-links {
-    height: 45%;
-    width: 100%;
-    display: flex;
-justify-content: center;
-}
-.card-produto .produto-img{
-    height: 100%;
-    width: 220px;
-}
-/* ---===DESCRIÇÃO===--- */
-.descricao {
-    height: 35%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-/* --Preço-- */
-.descricao .preco {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    margin-left: 5px;
-}
-
-.sem-desconto{
-    color: rgb(117, 0, 0);
-    text-decoration: line-through;
-    font-size: 12px;
-}
-.desconto{
-color: rgb(10, 78, 10);
-font-size:15px;
-}
-/* ------------- */
-
-/* --botao add car-- */
-.add-car{
-border: none;
-width: 100%;
-background-color: rgb(90, 67, 46);
-color: aliceblue;
-height: 13%;
-transition: .2s;
-
-}
-.add-car img{
-    height: 20px;
-    width: 20px;
-}
-.add-car:hover{
-    background-color: rgb(133, 102, 74);
-
+.card-circle img{
+    transform: translateX(-40px);
 }
