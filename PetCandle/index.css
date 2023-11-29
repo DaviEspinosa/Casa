@@ -9,6 +9,7 @@ body{
     margin: 0;
     padding: 0;
     font-family: var(--padrao);
+    background-color: #f9fae8;
 }
 
 /* ----- Header ----- */
@@ -17,17 +18,16 @@ body{
     justify-content: center;
     width: 100%;
     height: 100%;
-    box-shadow: 30px 0px 20px 30px rgb(212, 212, 212);
     font-family: 'Hammersmith One', sans-serif;;
 }
 .banner{
-    height: 110%;
+
     width: 100%;
     position:absolute;
-    z-index: -1;    
+    z-index: -2;    
 }
 
-/* ----- Navbar ----- */
+/* ----- Navbar e Botão ----- */
 .navbar {
     height: 30px;
     width: 100%;
@@ -90,7 +90,6 @@ justify-content: space-between;
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
-    background-color: #f9fae8;
 }
 /* --==Section Novos Produtos==-- */
 .Servicos {
@@ -140,19 +139,56 @@ align-items: center;
     transition: .2s;
 }
 
-/* Section CURIOSIDADES */
+/* ---===Section CURIOSIDADES===---*/
+/* --Container-- */
 .curiosidades{
     height: 1200px;
     width: 90%;
-    margin-top: 100px;
     display: flex;
     align-items: center;
     flex-direction: column;
-    justify-content: space-between;
 }
+
+/* ---Cards com informações----- */
 .info-1, .info-2{
     width: 80%;
-    height: 40%;
-    background-color: aquamarine;
-    
+    height: 300px;
+    background-color: rgb(244, 253, 212);
+    margin-top: 100px;
+    overflow: hidden;
 }
+.info-1 h1, .info-2 h1{
+    font-family: 'Ephesis', cursive;
+    font-size: 30px;
+    margin: 0;
+}
+.info-1, .info-2 p{
+    font-size: 15px;
+}
+/*----- Texto -----*/
+.info-text-1, .info-text-2{
+    width: 50%;
+    margin: 20px;
+}
+
+/* -----Imagem -----*/
+/* <!-- ==============PROVISORIO=============== --> */
+.info-img-1{
+    height: 100%;
+    width: 40%;
+    transform: translateX(120px);
+    display: flex;
+    align-items: center;
+}
+.info-img-2{
+    height: 100%;
+    width: 40%;
+    transform: translateX(-30px);
+    display: flex;
+    align-items: center;
+}
+.info-2 .img img{
+    height: 120%;
+    width: 100%;
+} 
+
