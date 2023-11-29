@@ -1,220 +1,245 @@
-
-
 :root {
-    --padrao: 'Hammersmith One', sans-serif;
+  --padrao: "Hammersmith One", sans-serif;
 }
 
-body{
-    height: 100vh;
-    margin: 0;
-    padding: 0;
-    font-family: var(--padrao);
-    background-color: #f9fae8;
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: var(--padrao);
+  background-color: #ffffff;
 }
 
 /* ----- Header ----- */
 .header {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    font-family: 'Hammersmith One', sans-serif;;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  font-family: "Hammersmith One", sans-serif;
+  overflow: hidden;
 }
-.banner{
-
-    width: 100%;
-    position:absolute;
-    z-index: -2;    
+.banner {
+  width: 100%;
+  position: absolute;
+  z-index: -2;
 }
 
-/* ----- Navbar e Botão ----- */
+/* ----- Botão do Banner ----- */
+
+.btn-banner{
+  margin-top: 23%;
+  margin-left: 10%;
+  width: auto;
+  height: 60px;
+}
+
+.btn-banner button{
+  padding: 10px 50px 10px 50px;
+  border: none;
+  border-radius: 50px;
+  font-weight: 700;
+  box-shadow: 3px 3px 15px gray;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-banner button:hover{
+  transform: scale(110%);
+}
+
+/* ----- Navbar ----- */
 .navbar {
-    height: 30px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding: 15px;
+  height: 30px;
+  width: 97%;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
 }
 /* Componentes do navbar-1 (logo, link, login) */
 .logo-img {
-    width: auto;
-    height: auto;
+  width: auto;
+  height: auto;
 }
 /* ------ links ------ */
 .links {
-    width: 40%;
-    display: flex;
-    align-items: center;
+  width: 35%;
+  display: flex;
+  align-items: center;
 }
 .header .navbar ul {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    justify-content: space-between;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
 }
 .header .navbar ul a {
-    text-decoration: none;
-    color: rgb(116, 60, 60);
-    position: relative;
+  text-decoration: none;
+  /* color: rgb(116, 60, 60); */
+  color: rgb(255, 136, 0);
+  position: relative;
 }
-.navbar ul a::after{
-    content: "";
-    width: 0%;
-    height: 3px;
-    background-color: rgb(102, 33, 33);
-    position: absolute;
-    bottom: 0;
-    left: 1px;
-    transition: .5s;
+.navbar ul a::after {
+  content: "";
+  width: 0%;
+  height: 3px;
+  /* background-color: rgb(102, 33, 33); */
+  background-color: rgb(255, 136, 0);
+  position: absolute;
+  bottom: 0;
+  left: 1px;
+  transition: 0.5s;
 }
-.navbar ul a:hover::after{
-    width: 120%;
-    transition: .5s;
+.navbar ul a:hover::after {
+  width: 120%;
+  transition: 0.5s;
 }
-
 
 /* --login e cadastro (LINK)-- */
 .login-cad-section {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 .login-cad-section a {
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    padding: 5px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  padding: 5px;
 }
 /*-------Search-box-----*/
 .search-box input {
-    width: 200px;
-    height: 25px;
-    border-radius: 40px;
-    background-color: transparent;
-    border-width: 2px;
-    border-color: rgb(2, 91, 2);
-    outline: none;
-    padding: 2px;
-    padding-left: 10px;
+  width: 40vh;
+  height: 25px;
+  border-radius: 40px;
+  background-color: white;
+  border: none;
+  outline: none;
+  padding: 2px;
+  padding-left: 10px;
 }
 .search-box input::placeholder {
-    color: rgb(195, 197, 198);
+  color: rgb(195, 197, 198);
 }
 
 /* ----=====CONATINER=====----- */
-.container{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: column;
+.container {
+  margin-top: 12%;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
 }
 /* --==Section Novos Produtos==-- */
 .Servicos {
-    margin-top:10px;
-    height: 250px;
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+  height: 95px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
-.div-cards{
-height: 300px;
-width: 70%;
-display: flex;
-justify-content: space-between;
-align-items: center;
+.div-cards {
+  height: 100px;
+  width: 93%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 /* itens cards */
-.card-circle{
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: .5s;
-    box-shadow: 2px 0px 20px 0px rgb(206, 206, 206);
+.card-rectangle {
+  height: 50px;
+  width: 300px;
+  border-radius: 5px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+  margin-left: 2%;
 }
-.card-circle:hover{
-    transition: .5s;
-    border-radius: 10px;
-    width: 200px;
+.card-rectangle:hover {
+  transition: 0.5s;
 }
-.card-circle img{
-    height: 60px;
+.card-rectangle img {
+  height: 80%;
+  /* position: relative;
+  z-index: 1; */
 }
-.card-circle span{
-    display: none;
-    transition: .2s;
+.card-rectangle span {
+  display: none;
+  margin-left: 30px;
+  transition: 0.2s ease-in-out;
 }
-.card-circle:hover span{
-    display: block;
-    height: 30%;
-    margin: 10px;
-    transition: .2s;
+.card-rectangle:hover span {
+  display: block;
+  height: 30%;
+  /* margin: 10px; */
+  transition: 0.2s;
+  animation: word-animation 0.5s;
 }
 
-/* ---===Section CURIOSIDADES===---*/
-/* --Container-- */
-.curiosidades{
-    height: 1200px;
+@keyframes word-animation {
+  from {
+    margin-left: -50px;
+    opacity: 0;
+  }
+  to {
+    margin-left: 30px;
+    opacity: 1;
+  }
+}
+/* ----====ABout Us===---- */
+.div-about-us{  
+    height: 450px;
+    width: 100%;
+    display: flex;
+justify-content: center;
+    align-items: center;
+
+}
+.container-about-us{
     width: 90%;
+    height: 90%;
     display: flex;
-    align-items: center;
-    flex-direction: column;
 }
-
-/* ---Cards com informações----- */
-.info-1, .info-2{
-    width: 80%;
-    height: 300px;
-    background-color: rgb(228, 228, 228);
-    margin-top: 50px;
-    overflow: hidden;
+.container-about-us hr{
+    width: 4px;
+    height:100%;
+    margin:0;
+    background-color: rgb(30, 155, 30);
+    
 }
-/*----- Texto -----*/
-.info-text-1, .info-text-2{
+.div-left-about-us{
     width: 50%;
     margin: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 90%;
 }
-.info-text-1 h1, .info-text-2 h1{
-    color: rgb(31, 95, 31);
-    font-family: 'Ephesis', cursive;
+
+.div-left-about-us .title{
+  border-left: 4px solid rgb(30, 155, 30);
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+
+.div-left-about-us  .title .span-about-us{
+    font-weight: 800;
     font-size: 30px;
-    margin: 0;
 }
-.info-text-1 hr , .info-text-2 hr{
-
-    height: 2px;
-    background-color:  rgb(31, 95, 31);;
-}
-.info-1-text-1 p , .info-text-2 p{
-    font-size: 15px;
-}
-
-/* -----Imagem -----*/
-/* <!-- ==============PROVISORIO=============== --> */
-.info-img-1{
-    height: 100%;
-    width: 40%;
-    display: flex;
-    float: right;
-    border-radius: 20px 0px 0px 20px ;
-    overflow: hidden;
-}
-.info-img-2{
-    height: 100%;
-    width: 40%;
-    display: flex;
-    float: left;
-    border-radius: 20px 0px 0px 20px ;
-    overflow: hidden;
-}
-.info-img-1 img,.info-img-2- img{
+/* ----------------PROVISORIO------------- */
+.alguma-coisa{
+    margin-top: 10px;
     width: 100%;
-    height: 100%;
+    height: 180px;
+    background-color: rgb(218, 218, 218);
 }
 
-
+.div-right-about-us{
+    width: 45%;
+    float: right;
+    height: 90%;
+    overflow: hidden;
+}
