@@ -19,6 +19,7 @@ body {
   font-family: "Hammersmith One", sans-serif;
   overflow: hidden;
 }
+
 .banner {
   width: 100%;
   position: absolute;
@@ -27,25 +28,30 @@ body {
 
 /* ----- Botão do Banner ----- */
 
-.btn-banner{
+.btn-banner {
   margin-top: 23%;
   margin-left: 10%;
   width: auto;
   height: 60px;
 }
 
-.btn-banner button{
+.btn-banner button {
   padding: 10px 50px 10px 50px;
   border: none;
   border-radius: 50px;
   font-weight: 700;
   box-shadow: 3px 3px 15px gray;
+  background-color: #ff8e15;
+  border: 2px solid #ff8e15;
+  color: rgb(255, 255, 255);
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
 
-.btn-banner button:hover{
+.btn-banner button:hover {
   transform: scale(110%);
+  background-color: white;
+  color: #ff8e15;
 }
 
 /* ----- Navbar ----- */
@@ -56,40 +62,46 @@ body {
   justify-content: space-between;
   padding: 15px;
 }
+
 /* Componentes do navbar-1 (logo, link, login) */
 .logo-img {
   width: auto;
   height: auto;
 }
+
 /* ------ links ------ */
 .links {
   width: 35%;
   display: flex;
   align-items: center;
 }
+
 .header .navbar ul {
   width: 100%;
   display: flex;
   justify-content: center;
   justify-content: space-between;
 }
+
 .header .navbar ul a {
   text-decoration: none;
   /* color: rgb(116, 60, 60); */
-  color: rgb(255, 136, 0);
+  color: #ff8e15;
   position: relative;
 }
+
 .navbar ul a::after {
   content: "";
   width: 0%;
   height: 3px;
   /* background-color: rgb(102, 33, 33); */
-  background-color: rgb(255, 136, 0);
+  background-color: #ff8e15;
   position: absolute;
   bottom: 0;
   left: 1px;
   transition: 0.5s;
 }
+
 .navbar ul a:hover::after {
   width: 120%;
   transition: 0.5s;
@@ -100,11 +112,13 @@ body {
   display: flex;
   align-items: center;
 }
+
 .login-cad-section a {
   text-decoration: none;
   color: rgb(255, 255, 255);
   padding: 5px;
 }
+
 /*-------Search-box-----*/
 .search-box input {
   width: 40vh;
@@ -116,6 +130,7 @@ body {
   padding: 2px;
   padding-left: 10px;
 }
+
 .search-box input::placeholder {
   color: rgb(195, 197, 198);
 }
@@ -130,22 +145,25 @@ body {
   justify-content: space-between;
   flex-direction: column;
 }
+
 /* --==Section Novos Produtos==-- */
 .Servicos {
-  height: 95px;
+  height: 150px;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }
+
 .div-cards {
-  height: 100px;
+  height: 150px;
   width: 93%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 /* itens cards */
 .card-rectangle {
   height: 50px;
@@ -158,19 +176,21 @@ body {
   transition: 0.5s;
   margin-left: 2%;
 }
+
 .card-rectangle:hover {
   transition: 0.5s;
 }
+
 .card-rectangle img {
   height: 80%;
-  /* position: relative;
-  z-index: 1; */
 }
+
 .card-rectangle span {
   display: none;
   margin-left: 30px;
   transition: 0.2s ease-in-out;
 }
+
 .card-rectangle:hover span {
   display: block;
   height: 30%;
@@ -184,62 +204,201 @@ body {
     margin-left: -50px;
     opacity: 0;
   }
+
   to {
     margin-left: 30px;
     opacity: 1;
   }
 }
+
 /* ----====ABout Us===---- */
-.div-about-us{  
-    height: 450px;
-    width: 100%;
-    display: flex;
-justify-content: center;
-    align-items: center;
-
-}
-.container-about-us{
-    width: 90%;
-    height: 90%;
-    display: flex;
-}
-.container-about-us hr{
-    width: 4px;
-    height:100%;
-    margin:0;
-    background-color: rgb(30, 155, 30);
-    
-}
-.div-left-about-us{
-    width: 50%;
-    margin: 20px;
-    display: flex;
-    flex-direction: column;
-    height: 90%;
+.div-about-us {
+  margin-top: 10vh;
+  height: 450px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.div-left-about-us .title{
-  border-left: 4px solid rgb(30, 155, 30);
+.container-about-us {
+  width: 90%;
+  height: 90%;
+  display: flex;
+}
+
+.container-about-us hr {
+  width: 4px;
+  height: 100%;
+  margin: 0;
+  background-color: rgb(30, 155, 30);
+}
+
+/* -----=====LADO ESQUERDO=====----- */
+.div-left-about-us,
+.div-left-services {
+  width: 50%;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 95%;
+}
+
+.div-left-about-us .title,
+.div-services .container-services .div-right-services .title {
+  border-left: 4px solid #1e9b1e;
   display: flex;
   flex-direction: column;
   padding: 5px;
 }
 
-.div-left-about-us  .title .span-about-us{
-    font-weight: 800;
-    font-size: 30px;
-}
-/* ----------------PROVISORIO------------- */
-.alguma-coisa{
-    margin-top: 10px;
-    width: 100%;
-    height: 180px;
-    background-color: rgb(218, 218, 218);
+.div-left-about-us .title .span-about-us,
+.div-right-services .title .span-services {
+  font-weight: 800;
+  font-size: 30px;
 }
 
-.div-right-about-us{
-    width: 45%;
-    float: right;
-    height: 90%;
-    overflow: hidden;
+/* -----=====NOSSA MISSAO E VISAO=====----- */
+.Nossa-Missao-Visao {
+  margin-top: 10px;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(218, 218, 218);
+}
+
+.Nossa-Missao-Visao .btn-M-V {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3em;
+}
+
+.btn-M-V .btn-Missao,
+.btn-Visao {
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-M-V .btn-Missao {
+  background-color: rgb(22, 157, 22);
+  color: #ffffff;
+  transition: .2s;
+  cursor: pointer;
+}
+
+.btn-M-V .btn-Visao {
+  background-color: rgb(193, 193, 193);
+  transition: .2s;
+  cursor: pointer;
+  padding: 7px;
+  font-size: 10px;
+}
+
+.text-Missao {
+  margin: 0;
+  padding: 20px 20px 0px 20px;
+
+}
+
+.text-Visao {
+  margin: 0;
+  display: none;
+  padding: 20px 20px 0px 20px;
+}
+
+/* -----=====LADO DIREITO=====----- */
+.div-right-about-us,
+.div-right-service {
+  width: auto;
+  float: right;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+
+.div-right-about-us img {
+  height: 100%;
+}
+
+/* -----===== Serviços =====----- */
+.div-services {
+  margin-top: 20%;
+  height: 650px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-services {
+  display: flex;
+}
+
+.div-services .container-services {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.service-img {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.service-img img {
+  height: 500px;
+}
+
+/* -----=====LADO DIREITO=====----- */
+.div-right-services .services-section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.div-right-services .services-section .services-top {
+  display: flex;
+}
+
+.div-right-services .services-section .services-bottom {
+  display: flex;
+}
+
+.div-services .container-services .div-right-services .title {
+  margin-bottom: 50px;
+}
+
+/* -----=====LADO ESQUERDO=====----- */
+.service-icon img {
+  height: 40px;
+}
+
+.service-icon {
+  background-color: #24b624;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 15vh;
+  padding: 5px;
+}
+
+/* 
+.div-right-services hr{
+  width: 4px;
+  height: 100%;
+  margin: 0;
+  background-color: rgb(30, 155, 30);
+} */
+
+.service-card {
+  width: 60vh;
+  height: 30vh;
 }
