@@ -33,21 +33,7 @@ BtnVisao.addEventListener("click", ()=>{
     BtnMissao.style.fontSize = '10px';
 
     textVisao.style.display = 'block';
-    textMissao.style.display = 'none';
+    textMissao.style.display= 'none';
 })
 
 //----------=========CARROSSEL===========--------
-// Função para mover os cards para a esquerda
-
-    const prev = document.querySelector('.prev');
-    const containerProducts = document.querySelector('.div-products-line-1');
-    
-    prev.addEventListener("click", ()=>{
-        container.scrollLeft -= 250; // Ajuste conforme o tamanho do card
-    })
-
-  // Função para mover os cards para a direita
-    const next = document.querySelector('.next');    
-  next.addEventListener("click", ()=>{
-    container.next +=250 ;
-  })

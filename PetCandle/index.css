@@ -404,38 +404,7 @@ body {
 }
 
 /* ----=====Produtos Cards=====----- */
-.div-products{
-  width: 100%;
-  height: 400px;
-display: flex;
-justify-content: center; 
-align-items: center;
-}
-.container-products{
-  height: 90%;
-  width: 80%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-}
-.div-products-line-1 {
-  height: 300px;
-  width: 170%;
-  display: flex; 
-  align-items: center;
-  
-}
-.card{
-  margin-left: 1%;
-  width: 250px;
-  height: 200px;
-  background-color: grey;
-}
-.div-products .prev, .div-products .next{
-  height: 40px;
-  width: 40px;
-}
+/* Carrossel */
 
 
 
