@@ -405,14 +405,40 @@ body {
 
 /* ----=====Produtos Cards=====----- */
 /* Carrossel */
+.slider{
+  height: 100%;
+  width: 100%;
 
+}
+.container-card1, .container-card2{
+  margin-top: 20px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.slider-container{
+  height: 300px;
+  width: 80%;
+  overflow: hidden;
+  display: flex;
+  flex-direction:column ;
+  justify-content: center;
+}
+.div-cards-slide, .div-cards-slide2{
+  width: 200%;
+  display: flex;
+justify-content: space-between;
+transition: .5s;
 
-
-
-
-
-
-
+}
+.card{
+  background-color: #24b624;
+  height: 250px;
+  width: 200px;
+  margin-left:1% ;
+}
 
 
 
